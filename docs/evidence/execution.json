@@ -1,0 +1,32 @@
+{
+  "id": "003",
+  "status": "executed",
+  "commands": [
+    "python src/detect_drift.py sample/baseline.csv sample/current.csv --output outputs/drift.json"
+  ],
+  "elapsed_seconds": 1.02,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample/baseline.csv",
+      "sha256": "8da5f7a88768ff4fe7a7bf0b6b48866843c8cc14f506c3088829c55426b4a4f8"
+    },
+    {
+      "file": "sample/current.csv",
+      "sha256": "10f54195ce3ded14ffc667ba858b2e2ed1b07412d259c9b28112b661f609e8fa"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "68b10b84f696c87802a767964790b9e1eb5cfac31fd879f209a1713a1889143f",
+      "bytes": 734
+    },
+    {
+      "file": "results/artifacts/drift.json",
+      "sha256": "3db7941d8531d62ad808d3075593d39c8a3ecb1a57060eea4d2563f4bddfc1ad",
+      "bytes": 636
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}

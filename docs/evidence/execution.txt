@@ -1,0 +1,35 @@
+$ python src/detect_drift.py sample/baseline.csv sample/current.csv --output outputs/drift.json
+{
+  "added_columns": [
+    "new_flag"
+  ],
+  "removed_columns": [],
+  "changed_columns": {
+    "age": {
+      "range_drift": {
+        "baseline_min": 30.0,
+        "baseline_max": 40.0,
+        "current_min": 31.0,
+        "current_max": 180.0,
+        "outside_baseline_count": 1
+      }
+    },
+    "id": {
+      "range_drift": {
+        "baseline_min": 1.0,
+        "baseline_max": 3.0,
+        "current_min": 4.0,
+        "current_max": 5.0,
+        "outside_baseline_count": 2
+      }
+    },
+    "segment": {
+      "new_categories_preview": [
+        "C"
+      ],
+      "new_category_count": 1
+    }
+  },
+  "drift_detected": true
+}
+

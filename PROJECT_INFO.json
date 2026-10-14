@@ -1,0 +1,32 @@
+{
+  "project_id": 3,
+  "repo_name": "003-schema-drift-detector",
+  "title": "Schema Drift Detector",
+  "theme": "Data Foundations & Engineering",
+  "theme_id": "T01",
+  "level": 1,
+  "level_label": "Foundations",
+  "prototype_status": "research prototype",
+  "primary_description": "Production schema/statistical drift",
+  "research_question_proposed": "Can baseline-versus-current comparisons identify meaningful dataset changes while limiting false alerts?",
+  "sample_files": [
+    "sample/current.csv",
+    "sample/baseline.csv"
+  ],
+  "source_modules": [
+    "src/detect_drift.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/detect_drift.py sample/baseline.csv sample/current.csv --output outputs/drift.json"
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level1-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}
